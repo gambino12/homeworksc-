@@ -15,26 +15,37 @@ ShowNumber();
 // Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
 void ShowNumber()
 {
-    int n = new Random().Next();
+    Console.Write("add new number ->");
+    int n = Convert.ToInt32(Console.ReadLine());
     Console.Write(n + " -> ");
     if (n < 100)
-    {
+     {
         Console.Write("no third digit");
-    }
-    else
-   {
-    int n3 = n/100;
-    int n4 = n%10;
-    int n5 = я очень долго думал что тут делать, но я очень устал;
-    Console.Write(тут что то должго быть но я тупой);
-   }  
+     }
+     else
+     {
+         if(n>999)
+         {
+          while(n > 1000)
+        {
+         n = n/10;
+        }
+         n = n%10;
+         Console.Write(n);
+         }
+         else
+         {
+            n = n%10;
+         Console.Write(n); 
+         }
    
 }
+ }
+   
 
 ShowNumber();
 
 // Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным
-
 
 
 void ShowNumber()
